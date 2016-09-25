@@ -96,7 +96,7 @@ module Stochastic
         current=local_search(current, cities, penalties, max_no_improv, lambda)
         utilities=calculate_feature_utilities(penalties, cities, current[:vector])
         update_penalties!(penalties, cities, current[:vector], utilities)
-        best = current if best.nil or current[:cost] < best[:cost]
+        best = current if best.nil? or current[:cost] < best[:cost]
         puts " > iter=#{(iter+1)}, best=#{best[:cost]}, aug=#{best[:aug_cost]}"
       end
       best
