@@ -1,27 +1,10 @@
 module Stochastic
 
-  ###################################################################
-  #
-  # Random Search Algorithm
-  #
-  # Input: NumIterations, ProblemSize, SearchSpace
-  # Output: Best
-  #
-  # BestSolution ← ∅;
-  # foreach iteration i ∈ NumIterations do
-  #   search_candidate i ← RandomSolution(ProblemSize, SearchSpace);
-  #   if Cost(search_candidate i ) < Cost(BestSolution) then
-  #     BestSolution ← search_candidate i ;
-  #   end
-  # end
-  # return BestSolution;
-  #
-  ###################################################################
   class RandomSearch
 
     def initialize(size, max_iter)
       problem_size = size
-      search_space = Array.new(problem_size)
+      search_space = Array.new(problem_size) { |i| [-5, +5] }
       maximum_iterations = max_iter
       best_solution = self.search(search_space, maximum_iterations)
       puts "Done. Best Solution: c = #{best_solution[:cost]}, v = #{best_solution[:vector].inspect}"
@@ -33,7 +16,7 @@ module Stochastic
 
     def random_vector(minmax)
       Array.new(minmax.size) do |i|
-        minmax[i][0] + ((minmax[i][1]) - minmax[i][0])
+        minmax[i][0] + ((minmax[i][1]) - minmax[i][0] * rand())
       end
     end
 
