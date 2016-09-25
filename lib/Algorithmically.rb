@@ -1,6 +1,7 @@
 require 'Algorithmically/version'
 require 'Algorithmically/Stochastic/random_search'
-require 'Algorithmically/Stochastic/adaptive_random_search'
+require 'Algorithmically/Stochastic/hill_climbing'
+
 
 module Algorithmically
   include Stochastic
