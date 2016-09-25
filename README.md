@@ -17,4 +17,13 @@ And then execute:
 Or install it yourself as:
 
     $ gem install Algorithmically
+    
+## Usage
+
+### Stochastic Algorithms
+    
+    Algorithmically::RandomSearch.new(2, 50)
+
+    Algorithmically::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
+
 
