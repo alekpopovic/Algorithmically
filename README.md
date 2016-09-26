@@ -20,6 +20,10 @@ Or install it yourself as:
     
 ## Usage
 
+### Neural Algorithms
+
+    Algorithmically::Perceptron.new([[0,0,0], [0,1,1], [1,0,1], [1,1,1]], 2, 20, 0.1)
+
 ### Stochastic Algorithms
     
     Algorithmically::RandomSearch.new(2, 50)
