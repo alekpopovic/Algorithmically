@@ -1,6 +1,6 @@
 # Algorithmically
 
-Nature-Inspired Programming Recipes 
+Nature-Inspired Programming Recipes [![Gem Version](https://badge.fury.io/rb/Algorithmically.svg)](https://badge.fury.io/rb/Algorithmically)
 
 ## Installation
 
