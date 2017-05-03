@@ -8,7 +8,7 @@ module Algorithmically
       end
 
       def cost(permutation, cities)
-        distance =0
+        distance = 0
         permutation.each_with_index do |c1, i|
           c2 = (i == permutation.size - 1) ? permutation[0] : permutation[i + 1]
           distance += euc_2d(cities[c1], cities[c2])
