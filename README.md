@@ -30,13 +30,22 @@ Or install it yourself as:
 
 ### Stochastic Algorithms
     
-    Algorithmically::Neural::RandomSearch.new(2, 50)
+    Algorithmically::Stochastic::RandomSearch.new(2, 50)
 
-    Algorithmically::Neural::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
+    Algorithmically::Stochastic::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
     
-    Algorithmically::Neural::HillClimbing.new(2, 1000)
+    Algorithmically::Stochastic::HillClimbing.new(2, 1000)
     
-    Algorithmically::Neural::GuidedLocalSearch.new(150, [[565,575],[25,185],[345,750],[945,685]], 20, 0.3)
+    Algorithmically::Stochastic::GuidedLocalSearch.new(150, [[565,575],[25,185],[345,750],[945,685]], 20, 0.3)
+    
+    b52 = [[595,360],[1340,725],[1740,245]]
+    max_iterations = 150
+    max_no_improv = 20
+    alpha = 0.3
+    local_search_optima = 12000.0
+    lambda = alpha * (local_search_optima/b52.size.to_f)
+    
+    Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
 
 ### Swarm Algorithms
 
