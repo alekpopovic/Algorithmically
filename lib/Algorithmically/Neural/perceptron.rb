@@ -1,15 +1,15 @@
+# frozen_string_literal: true
+
 module Algorithmically
   module Neural
-
     class Perceptron
-
       def initialize(or_problem, inputs, iterations, learning_rate)
         execute(or_problem, inputs, iterations, learning_rate)
       end
 
       def random_vector(minmax)
         Array.new(minmax.size) do |i|
-          minmax[i][0] + ((minmax[i][1] - minmax[i][0]) * rand())
+          minmax[i][0] + ((minmax[i][1] - minmax[i][0]) * rand)
         end
       end
 
@@ -26,7 +26,7 @@ module Algorithmically
       end
 
       def activate(weights, vector)
-        sum = weights[weights.size-1] * 1.0
+        sum = weights[weights.size - 1] * 1.0
         vector.each_with_index do |input, i|
           sum += weights[i] * input
         end
@@ -34,7 +34,7 @@ module Algorithmically
       end
 
       def transfer(activation)
-        (activation >= 0) ? 1.0 : 0.0
+        activation >= 0 ? 1.0 : 0.0
       end
 
       def get_output(weights, vector)
@@ -73,8 +73,6 @@ module Algorithmically
         test_weights(weights, domain, num_inputs)
         weights
       end
-
     end
-
   end
 end

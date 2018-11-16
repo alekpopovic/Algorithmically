@@ -1,17 +1,18 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'Algorithmically/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'Algorithmically'
   spec.version = Algorithmically::VERSION
-  spec.authors = ['popac']
-  spec.email = ['web.guru.serbia@gmail.com']
+  spec.authors = ['nedrogriz']
+  spec.email = ['aleksandar.popovic.popac@gmail.com']
 
-  spec.summary = %q{Algorithmically}
-  spec.description = %q{Nature-Inspired Programming Recipes}
-  spec.homepage = 'https://github.com/popac/Algorithmically'
+  spec.summary = 'Algorithmically'
+  spec.description = 'Nature-Inspired Programming Recipes'
+  spec.homepage = 'https://github.com/nedrogriz/Algorithmically'
   spec.license = 'MIT'
 
   if spec.respond_to?(:metadata)
@@ -25,7 +26,8 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.13', '>= 1.13.1'
-  spec.add_development_dependency 'rake', '~> 11.3'
-  spec.add_development_dependency 'pry', '~> 0.10.4'
+  spec.add_development_dependency 'bundler', '~> 1.17', '>= 1.17.1'
+  spec.add_development_dependency 'pry', '~> 0.12.2'
+  spec.add_development_dependency 'rake', '~> 12.3', '>= 12.3.1'
+  spec.add_development_dependency 'rubocop', '~> 0.60.0'
 end
