@@ -7,7 +7,7 @@ require 'Algorithmically/version'
 Gem::Specification.new do |spec|
   spec.name = 'Algorithmically'
   spec.version = Algorithmically::VERSION
-  spec.authors = ['nedrogriz']
+  spec.authors = ['popicic']
   spec.email = ['aleksandar.popovic.popac@gmail.com']
 
   spec.summary = 'Algorithmically'
@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry', '~> 0.12.2'
   spec.add_development_dependency 'rake', '~> 12.3', '>= 12.3.1'
   spec.add_development_dependency 'rubocop', '~> 0.60.0'
+  spec.add_development_dependency 'rspec', '~> 3.8'
 end

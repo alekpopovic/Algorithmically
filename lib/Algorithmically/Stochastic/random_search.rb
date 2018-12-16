@@ -1,14 +1,18 @@
 # frozen_string_literal: true
 
+require_relative './RandomSearch/objectable'
+require_relative './RandomSearch/randomable'
+require_relative './RandomSearch/spaceable'
+
 module Algorithmically
   module Stochastic
-    # ##################################################################################################################
+    # ##########################################################################
     #
     # Algorithm Pseudocode
     #
-    # ##################################################################################################################
-    # ##################################################################################################################
-    # ##################################################################################################################
+    # ##########################################################################
+    # ##########################################################################
+    # ##########################################################################
     #
     # Input: NumIterations, ProblemSize, SearchSpace
     # Output: Best
@@ -21,38 +25,39 @@ module Algorithmically
     # end
     # return Best;
     #
-    # ##################################################################################################################
-    # ##################################################################################################################
-    # ##################################################################################################################
+    # ##########################################################################
+    # ##########################################################################
+    # ##########################################################################
     class RandomSearch
-      def initialize(size, max_iter)
-        problem_size = size
-        search_space = Array.new(problem_size) { |_i| [-5, +5] }
-        maximum_iterations = max_iter
-        best_solution = search(search_space, maximum_iterations)
-        puts "Done. Best Solution: c = #{best_solution[:cost]}, v = #{best_solution[:vector].inspect}"
+      include Algorithmically::Stochastic::Objectable
+      include Algorithmically::Stochastic::Randomable
+      include Algorithmically::Stochastic::Spaceable
+
+      attr_accessor :problem_size, :maximum_iterations, :negative_space, :positive_space
+
+      def initialize
+        yield self if block_given?
+        self.singleton_class.send :perform, @problem_size, @maximum_iterations, @negative_space, @positive_space
       end
 
-      def objective_function(vector)
-        vector.inject(0) { |sum, x| sum + (x**2.0) }
-      end
-
-      def random_vector(minmax)
-        Array.new(minmax.size) do |i|
-          minmax[i][0] + ((minmax[i][1]) - minmax[i][0] * rand)
+      class << self
+        def best_solution
+          @best_solution
         end
-      end
 
-      def search(search_space, maximum_iterations)
-        best_solution = nil
-        maximum_iterations.times do |iterate|
-          search_candidate = {}
-          search_candidate[:vector] = random_vector(search_space)
-          search_candidate[:cost] = objective_function(search_candidate[:vector])
-          best_solution = search_candidate if best_solution.nil? || (search_candidate[:cost] < best_solution[:cost])
-          puts " > iteration = #{(iterate + 1)}, best = #{best_solution[:cost]}"
+        private
+
+        def perform(*args)
+          problem_size, maximum_iterations, negative_space, positive_space = *args
+          @best_solution = nil
+          maximum_iterations.to_i.times do |iterate|
+            search_candidate = {}
+            search_candidate[:v] = Randomable.perform(Spaceable.perform(problem_size, negative_space, positive_space))
+            search_candidate[:c] = Objectable.perform(search_candidate[:v])
+            @best_solution = search_candidate if best_solution.nil? || (search_candidate[:c] < best_solution[:c])
+          end
+          @best_solution
         end
-        best_solution
       end
     end
   end

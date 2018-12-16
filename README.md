@@ -30,7 +30,14 @@ Or install it yourself as:
 
 ### Stochastic Algorithms
     
-    Algorithmically::Stochastic::RandomSearch.new(2, 50)
+    Algorithmically::Stochastic::RandomSearch.new do |config|
+      config.problem_size = 10
+      config.maximum_iterations = 10
+      config.negative_space = 2
+      config.positive_space = 2
+    end
+
+    Algorithmically::Stochastic::RandomSearch.best_solution
 
     Algorithmically::Stochastic::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
     
