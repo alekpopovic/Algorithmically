@@ -1,6 +1,10 @@
 # Algorithmically
 
-Nature-Inspired Programming Recipes [![Gem Version](https://badge.fury.io/rb/Algorithmically.svg)](https://badge.fury.io/rb/Algorithmically)
+## Nature-Inspired Programming Recipes
+ 
+[![Gem Version](https://badge.fury.io/rb/Algorithmically.svg)](https://badge.fury.io/rb/Algorithmically)
+
+[![Build Status](https://travis-ci.org/popicic/Algorithmically.svg?branch=master)](https://travis-ci.org/popicic/Algorithmically)
 
 ## Installation
 
