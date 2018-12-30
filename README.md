@@ -38,8 +38,7 @@ Or install it yourself as:
 
 ### Stochastic Algorithms
     
-    
-    #### RandomSearch
+#### RandomSearch
     
     Algorithmically::Stochastic::RandomSearch.new do |config|
       config.problem_size = 10
