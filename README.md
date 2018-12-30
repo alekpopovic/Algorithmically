@@ -8,6 +8,8 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/popicic/algorithmically/badge)](https://www.codefactor.io/repository/github/popicic/algorithmically)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f41c60b391b6429388da223039873768)](https://www.codacy.com/app/webguruserbia/Algorithmically?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=popicic/Algorithmically&amp;utm_campaign=Badge_Grade)
+
 ## Installation
 
 Add this line to your application's Gemfile:
