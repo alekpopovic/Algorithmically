@@ -67,10 +67,10 @@ Or install it yourself as:
     alpha = 0.3
     local_search_optima = 12000.0
     lambda = alpha * (local_search_optima/b52.size.to_f)
-    
-    Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
 
 #### Iterated_Local_Search
+
+    Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
 
 ### Swarm Algorithms
 
