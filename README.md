@@ -6,6 +6,8 @@
 
 [![Build Status](https://travis-ci.org/popicic/Algorithmically.svg?branch=master)](https://travis-ci.org/popicic/Algorithmically)
 
+[![CodeFactor](https://www.codefactor.io/repository/github/popicic/algorithmically/badge)](https://www.codefactor.io/repository/github/popicic/algorithmically)
+
 ## Installation
 
 Add this line to your application's Gemfile:
