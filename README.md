@@ -37,8 +37,8 @@ Or install it yourself as:
     Algorithmically::Neural::Perceptron.new([[0,0,0], [0,1,1], [1,0,1], [1,1,1]], 2, 20, 0.1)
 
 ### Stochastic Algorithms
-
-    ```
+    
+    
     #### RandomSearch
     
     Algorithmically::Stochastic::RandomSearch.new do |config|
@@ -49,7 +49,7 @@ Or install it yourself as:
     end
 
     Algorithmically::Stochastic::RandomSearch.best_solution
-    ```
+    
 
     Algorithmically::Stochastic::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
     
