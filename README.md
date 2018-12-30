@@ -30,9 +30,13 @@ Or install it yourself as:
 
 ### Evolutionary Algorithms
 
+#### Genetic
+
     Algorithmically::Evolutionary::Genetic.new(100, 64, 100, 0.98)
 
 ### Neural Algorithms
+
+#### Perceptron
 
     Algorithmically::Neural::Perceptron.new([[0,0,0], [0,1,1], [1,0,1], [1,1,1]], 2, 20, 0.1)
 
@@ -73,6 +77,8 @@ Or install it yourself as:
     Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
 
 ### Swarm Algorithms
+
+#### ParticleSwarm
 
     Algorithmically::Swarm::ParticleSwarm.new(2, 100, 1000, 1000, 50, 100.0, 2.0, 2.0)
 
