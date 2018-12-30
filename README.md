@@ -42,7 +42,7 @@ Or install it yourself as:
 
 ### Stochastic Algorithms
     
-#### RandomSearch
+#### Random Search
     
     Algorithmically::Stochastic::RandomSearch.new do |config|
       config.problem_size = 10
@@ -53,15 +53,15 @@ Or install it yourself as:
 
     Algorithmically::Stochastic::RandomSearch.best_solution
     
-#### AdaptiveRandomSearch
+#### Adaptive Random Search
 
     Algorithmically::Stochastic::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
     
-#### HillClimbing
+#### Hill Climbing
 
     Algorithmically::Stochastic::HillClimbing.new(2, 1000)
     
-#### GuidedLocalSearch
+#### Guided Local Search
 
     Algorithmically::Stochastic::GuidedLocalSearch.new(150, [[565,575],[25,185],[345,750],[945,685]], 20, 0.3)
     
@@ -72,13 +72,13 @@ Or install it yourself as:
     local_search_optima = 12000.0
     lambda = alpha * (local_search_optima/b52.size.to_f)
 
-#### Iterated_Local_Search
+#### Iterated Local Search
 
     Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
 
 ### Swarm Algorithms
 
-#### ParticleSwarm
+#### Particle Swarm
 
     Algorithmically::Swarm::ParticleSwarm.new(2, 100, 1000, 1000, 50, 100.0, 2.0, 2.0)
 
