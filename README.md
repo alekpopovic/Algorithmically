@@ -49,11 +49,16 @@ Or install it yourself as:
 
     Algorithmically::Stochastic::RandomSearch.best_solution
     
+#### AdaptiveRandomSearch
 
     Algorithmically::Stochastic::AdaptiveRandomSearch.new(1000, 2, 0.05, 1.3, 3.0, 10, 30)
     
+#### HillClimbing
+
     Algorithmically::Stochastic::HillClimbing.new(2, 1000)
     
+#### GuidedLocalSearch
+
     Algorithmically::Stochastic::GuidedLocalSearch.new(150, [[565,575],[25,185],[345,750],[945,685]], 20, 0.3)
     
     b52 = [[595,360],[1340,725],[1740,245]]
@@ -64,6 +69,8 @@ Or install it yourself as:
     lambda = alpha * (local_search_optima/b52.size.to_f)
     
     Algorithmically::Stochastic::Iterated_Local_Search.search(max_iterations, b52, max_no_improv, lambda)
+
+#### Iterated_Local_Search
 
 ### Swarm Algorithms
 
