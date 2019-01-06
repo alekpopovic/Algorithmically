@@ -78,5 +78,3 @@ Or install it yourself as:
 #### Particle Swarm
 
     Algorithmically::Swarm::ParticleSwarm.new(2, 100, 1000, 1000, 50, 100.0, 2.0, 2.0)
-
-
