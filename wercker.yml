@@ -5,4 +5,4 @@ build:
     - bundle-install
     - script:
       name: RSpec
-      code: bin/bundle exec rspec
+      code: bundle exec rspec
