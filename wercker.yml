@@ -1,4 +1,4 @@
-box: ruby:2.2.6
+box: ruby:2.6.0
 
 build:
   steps:
