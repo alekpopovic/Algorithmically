@@ -4,6 +4,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/popicic/algorithmically/badge)](https://www.codefactor.io/repository/github/popicic/algorithmically)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f41c60b391b6429388da223039873768)](https://www.codacy.com/app/webguruserbia/Algorithmically?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=popicic/Algorithmically&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/bba4673e-a293-4107-847c-fdf6dcbf655b)](https://codebeat.co/projects/github-com-popicic-algorithmically-master)
+[![BCH compliance](https://bettercodehub.com/edge/badge/popicic/Algorithmically?branch=master)](https://bettercodehub.com/)
 
 # Algorithmically
 
