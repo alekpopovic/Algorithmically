@@ -7,7 +7,7 @@
 
 # Algorithmically
 
-## Nature-Inspired Programming Recipes
+## Nature Inspired Programming Recipes
 
 ## Installation
 
