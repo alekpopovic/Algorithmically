@@ -3,7 +3,7 @@
 [![wercker status](https://app.wercker.com/status/e456d9eec98db3773239631ea504aa2d/s/master "wercker status")](https://app.wercker.com/project/byKey/e456d9eec98db3773239631ea504aa2d)
 [![CodeFactor](https://www.codefactor.io/repository/github/popac/algorithmically/badge)](https://www.codefactor.io/repository/github/popac/algorithmically)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f41c60b391b6429388da223039873768)](https://www.codacy.com/manual/webguruserbia/Algorithmically?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=popac/Algorithmically&amp;utm_campaign=Badge_Grade)
-[![codebeat badge](https://codebeat.co/badges/bba4673e-a293-4107-847c-fdf6dcbf655b)](https://codebeat.co/projects/github-com-popicic-algorithmically-master)
+[![codebeat badge](https://codebeat.co/badges/48da97f1-7562-4d44-8af6-0355f869d891)](https://codebeat.co/projects/github-com-popac-algorithmically-master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/popicic/Algorithmically?branch=master)](https://bettercodehub.com/)
 
 # Algorithmically
