@@ -7,12 +7,12 @@ require 'Algorithmically/version'
 Gem::Specification.new do |spec|
   spec.name = 'Algorithmically'
   spec.version = Algorithmically::VERSION
-  spec.authors = ['popicic']
+  spec.authors = ['popac']
   spec.email = ['aleksandar.popovic.popac@gmail.com']
 
   spec.summary = 'Algorithmically'
   spec.description = 'Nature-Inspired Programming Recipes'
-  spec.homepage = 'https://github.com/nedrogriz/Algorithmically'
+  spec.homepage = 'https://github.com/popac/Algorithmically'
   spec.license = 'MIT'
 
   if spec.respond_to?(:metadata)
