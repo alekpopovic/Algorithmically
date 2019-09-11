@@ -1,5 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/Algorithmically.svg)](https://badge.fury.io/rb/Algorithmically)
-[![Build Status](https://travis-ci.org/popicic/Algorithmically.svg?branch=master)](https://travis-ci.org/popicic/Algorithmically)
+[![Build Status](https://travis-ci.org/popac/Algorithmically.svg?branch=master)](https://travis-ci.org/popac/Algorithmically)
 [![wercker status](https://app.wercker.com/status/e456d9eec98db3773239631ea504aa2d/s/master "wercker status")](https://app.wercker.com/project/byKey/e456d9eec98db3773239631ea504aa2d)
 [![CodeFactor](https://www.codefactor.io/repository/github/popac/algorithmically/badge)](https://www.codefactor.io/repository/github/popac/algorithmically)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f41c60b391b6429388da223039873768)](https://www.codacy.com/app/webguruserbia/Algorithmically?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=popicic/Algorithmically&amp;utm_campaign=Badge_Grade)
