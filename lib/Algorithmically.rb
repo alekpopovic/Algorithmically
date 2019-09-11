@@ -11,11 +11,8 @@ require 'Algorithmically/Stochastic/variable_neighborhood_search'
 require 'Algorithmically/Stochastic/greedy_randomized_adaptive _search'
 require 'Algorithmically/Stochastic/scatter_search'
 require 'Algorithmically/Stochastic/reactive_rabu_search'
-
 require 'Algorithmically/Evolutionary/genetic'
-
 require 'Algorithmically/Neural/perceptron'
-
 require 'Algorithmically/Swarm/particle_swarm'
 
 module Algorithmically
