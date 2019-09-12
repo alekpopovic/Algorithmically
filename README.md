@@ -28,16 +28,16 @@ Or install it yourself as:
     
 ## Usage
 
-### Stochastic Algorithms
+  ### Stochastic Algorithms
     
-#### Random Search
-    
-    Algorithmically::Stochastic::RandomSearch.new do |config|
-      config.problem_size = 10
-      config.maximum_iterations = 10
-      config.negative_space = 2
-      config.positive_space = 2
-    end
+    #### Random Search
 
-    Algorithmically::Stochastic::RandomSearch.best_solution
+        Algorithmically::Stochastic::RandomSearch.new do |config|
+          config.problem_size = 10
+          config.maximum_iterations = 10
+          config.negative_space = 2
+          config.positive_space = 2
+        end
+
+        Algorithmically::Stochastic::RandomSearch.best_solution
 
