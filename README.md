@@ -31,7 +31,7 @@ Or install it yourself as:
 ### Stochastic Algorithms
     
 #### Random Search
-`    
+    
     Algorithmically::Stochastic::RandomSearch.new do |config|
       config.problem_size = 10
       config.maximum_iterations = 10
@@ -40,4 +40,4 @@ Or install it yourself as:
     end
 
     Algorithmically::Stochastic::RandomSearch.best_solution
-`
+
