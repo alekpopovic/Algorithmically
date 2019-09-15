@@ -21,7 +21,7 @@ jobs:
         version: 2.6.x
         
     - name: Rubocop checks
-    uses: gimenete/rubocop-action@1.0
+      uses: gimenete/rubocop-action@1.0
 
     - name: Publish to GPR
       run: |
